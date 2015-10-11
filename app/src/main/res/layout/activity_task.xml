@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lk.agent.certislanka.certisagenttracking.TaskActivity"
+    android:background="#ffd4d4d4">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tv_task_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task_status"
+        android:id="@+id/textView"
+        android:layout_marginTop="25dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/tv_task_name"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_task_status"
+        android:entries="@array/task_status"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:dropDownWidth="fill_parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/write_a_comment"
+        android:id="@+id/tv_comment"
+        android:singleLine="true"
+        android:textSize="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/spn_task_status"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/et_comment"
+        android:background="@drawable/border_style"
+        android:shadowColor="#ff000000"
+        android:layout_below="@+id/tv_comment"
+        android:layout_alignParentEnd="false"
+        android:padding="5dp"
+        android:gravity="top" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Submit"
+        android:id="@+id/btn_task_submit"
+        android:background="#F89B22"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/et_comment"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+</ScrollView>

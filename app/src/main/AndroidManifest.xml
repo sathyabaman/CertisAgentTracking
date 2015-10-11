@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lk.agent.certislanka.certisagenttracking" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.example.SampleActivity" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.ForgotPassword" />
+        </activity>
+        <activity
+            android:name=".mainmenu"
+            android:label="@string/title_activity_mainmenu"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".resetpassword"
+            android:label="@string/title_activity_resetpassword" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.resetpassword" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity
+            android:name=".My_Location"
+            android:label="@string/title_activity_my__location"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.My_Location" />
+        </activity>
+        <activity
+            android:name=".Schedule_Activity"
+            android:label="@string/title_activity_schedule_"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.Schedule_Activity" />
+        </activity>
+        <activity
+            android:name=".Visits_Activity"
+            android:label="@string/title_activity_visits_"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.Visits_Activity" />
+        </activity>
+        <activity
+            android:name=".Visit_Location"
+            android:label="@string/title_activity_visit__location"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.Visit_Location" />
+        </activity>
+        <activity
+            android:name=".VisitsDetailsActivity"
+            android:label="@string/title_activity_visits_details" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.VisitsDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Item_Activity"
+            android:label="@string/title_activity_item_" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.Item_Activity" />
+        </activity>
+        <activity
+            android:name=".TaskActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/title_activity_task"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.agent.certislanka.certisagenttracking.TaskActivity" />
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyChf9RE3eNArIno0GH_q0Y6RLtaFAjSlD8"/>
+
+
+        <service android:name=".data.CertisService"/>
+        <service android:name=".data.ScheduleCheckService"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lbl_login">Agent Login</string>
+    <string name="username">User Name</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_email">Please enter your email address</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="view_schedule">View Schedule</string>
+    <string name="Enter_new_password">Please enter your new password</string>
+    <string name="confrom_password">Confirm Password</string>
+    <string name="view_location">View My Location</string>
+    <string name="enter_username">Please enter your username</string>
+    <string name="enter_password">Please enter your password</string>
+    <string name="view_map">Map</string>
+    <string name="tasks">Tasks</string>
+    <string name="Submit">Submit</string>
+    <string name="view_on_google_maps">View on Google Maps</string>
+    <string name="write_a_comment">Write a comment</string>
+    <string name="field_officers">Field Officers</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="customer">Customer</string>
+    <string name="visit_date">Visit Date</string>
+    <string name="visit_location">Visit Location</string>
+    <string name="visit_tim">Visit Time</string>
+    <string name="contact_no">Contact No</string>
+    <string name="address">Address</string>
+</resources>

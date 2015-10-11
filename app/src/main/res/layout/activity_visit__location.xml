@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_v_google_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="startActivity"
+        android:text="@string/view_on_google_maps"
+        android:layout_alignParentBottom="true"
+        android:background="#F89B22" />
+
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map"
+    tools:context="lk.agent.certislanka.certisagenttracking.Visit_Location"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_above="@+id/btn_v_google_map"
+    android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
